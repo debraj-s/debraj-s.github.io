@@ -3,44 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DSA Practice website built for GitHub Pages with easy-to-use static HTML and CSS." />
     <title>DSA Practice</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>Welcome to DSA Practice</h1>
-        <p>A simple GitHub Pages website created for your repository.</p>
-      </header>
-
-      <section>
-        <h2>About this site</h2>
-        <p>
-          This site is built using plain HTML and CSS and is ready to publish from
-          the <code>docs/</code> folder on GitHub Pages.
-        </p>
-        <p>
-          Add your content here or replace this page with your own project details.
-        </p>
-      </section>
-
-      <section class="features">
-        <div>
-          <h3>Fast</h3>
-          <p>Static HTML loads quickly and works on any browser.</p>
+    <div class="page-shell">
+      <nav class="site-nav">
+        <a class="brand" href="#home">DSA Practice</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#resources">Resources</a>
+          <a href="#contact">Contact</a>
         </div>
-        <div>
-          <h3>Easy to edit</h3>
-          <p>Update the files in <code>docs/</code> to change the site content.</p>
-        </div>
-        <div>
-          <h3>GitHub Pages Ready</h3>
-          <p>Publish this site by selecting <strong>docs/</strong> as the source.</p>
-        </div>
-      </section>
+      </nav>
 
-      <footer>
-        <p>Built with GitHub Pages.</p>
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-copy">
+            <p class="eyebrow">GitHub Pages Website</p>
+            <h1>Practice Data Structures & Algorithms with confidence.</h1>
+            <p>
+              A clean static site built in <strong>HTML</strong> and <strong>CSS</strong>, ready to publish from the <code>docs/</code> folder.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">Explore Projects</a>
+              <a class="button button-secondary" href="#resources">Learn More</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="glass-card">
+              <p>Start coding</p>
+              <pre><code>git clone https://github.com/your-username/your-repo.git</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="about">
+          <div class="section-header">
+            <span class="section-label">About</span>
+            <h2>What this site is for</h2>
+          </div>
+          <p>
+            This GitHub Pages website is designed for sharing your coding practice and portfolio. Use the <code>docs/</code> directory as the publishing source on GitHub, and update the content anytime.
+          </p>
+          <div class="feature-grid">
+            <article>
+              <h3>Static and secure</h3>
+              <p>No server required. GitHub hosts the page directly from your repository.</p>
+            </article>
+            <article>
+              <h3>Easy to customize</h3>
+              <p>Add new sections, code examples, or links to your projects with plain HTML and CSS.</p>
+            </article>
+            <article>
+              <h3>Responsive design</h3>
+              <p>The layout adapts to desktop, tablet, and mobile screen sizes.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="projects">
+          <div class="section-header">
+            <span class="section-label">Projects</span>
+            <h2>Featured practice pages</h2>
+          </div>
+          <div class="card-grid">
+            <article class="project-card">
+              <h3>Algorithm walkthroughs</h3>
+              <p>Build step-by-step explanations for sorting, search, and pathfinding algorithms.</p>
+            </article>
+            <article class="project-card">
+              <h3>Practice problems</h3>
+              <p>Organize sample problems by difficulty, topic, and language.</p>
+            </article>
+            <article class="project-card">
+              <h3>Study notes</h3>
+              <p>Keep notes on data structures, complexity, and coding interview strategies.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="resources">
+          <div class="section-header">
+            <span class="section-label">Resources</span>
+            <h2>Helpful links</h2>
+          </div>
+          <ul class="resource-list">
+            <li><strong>GitHub Pages:</strong> Host your site from the repository using the <code>docs/</code> folder.</li>
+            <li><strong>HTML & CSS:</strong> Keep the site lightweight with static files and no build step.</li>
+            <li><strong>Portfolio-ready:</strong> Add more pages, sample solutions, and links to your GitHub projects.</li>
+          </ul>
+        </section>
+
+        <section class="section contact-section" id="contact">
+          <div>
+            <div class="section-header">
+              <span class="section-label">Contact</span>
+              <h2>Want to update this site?</h2>
+            </div>
+            <p>
+              Edit the HTML and CSS files in the <code>docs/</code> folder, then push your changes to GitHub. If you want, add a <code>README.md</code> or more pages to expand the website.
+            </p>
+            <a class="button button-primary" href="https://github.com/">Open GitHub</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Made for GitHub Pages · Update this page in <code>docs/index.html</code>.</p>
       </footer>
     </div>
   </body>
